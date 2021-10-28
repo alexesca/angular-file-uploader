@@ -26,7 +26,7 @@ export class AppComponent {
       const formData = new FormData();
       formData.append('thumbnail', file);
 
-      const upload$ = this.http.post('/api', formData, {
+      const upload$ = this.http.post('/', formData, {
         reportProgress: true,
         observe: 'events'
       })
